@@ -1,0 +1,25 @@
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] base dizin
+İlk elemanı root olarak seçilir:7
+
+Sıradaki eleman 7'den küçük ise 7'nin soluna, 7'nin sağına yerleştirilerek devam edilir.
+5<7 bu yüzden 5, 7'nin solunda yer alacak.
+           7
+          /
+         5        
+Sıradaki eleman 5'ten küçükse 5'in soluna, 5 ile 7'nin arasında ise 5'in sağına, 7'den büyükse 7'nin sağına yerleştirilerek devam edilir.
+1<5 bu yüzden 1, 5'in solunda yer alacak.
+           7
+          /
+         5
+        /
+       1     
+ Bundan sonraki adımlarda 3. adımdaki gibi devam edilir. Son olarak binary search tree şekildeki gibi ortaya çıkar:
+           7
+         /   \      
+        5     8
+       / \     \
+      1   6     9
+     / \
+    0   3
+       / \
+      2   4
